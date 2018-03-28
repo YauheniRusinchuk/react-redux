@@ -1,33 +1,24 @@
-import {ITEM_HAS_ERROR,ITEM_IS_LOADDING,ITEM_FETCH_DATA} from './actionTypes';
+import {ITEM_HAS_ERROR,ITEM_FETCH_DATA} from './actionTypes';
 import axios from 'axios';
 
 export function fetchRequest(url) {
   return (dispatch) => {
-    dispatch(itemsIsLoading(true))
-
     axios.get(url)
       .then(res => {
-        dispatch(itemsFetchDataSuccess(res.data))
-      })
-      .catch(err => dispatch(itemsHasErrored(true)))
-
+        dispatch(itemsFetchDataSuccess(res.data.articles))
+      }).catch((err) => {})
   }
-};
+}
 
 
-export function itemsHasErrored(bool) {
+export function itemsHasErrored(msg) {
   return {
     type: ITEM_HAS_ERROR,
-    bool
+    msg
   }
 }
 
-export function itemsIsLoading(bool) {
-  return {
-    type: ITEM_IS_LOADDING,
-    bool
-  }
-}
+
 
 export function itemsFetchDataSuccess(items) {
   return {
