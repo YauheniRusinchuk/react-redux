@@ -1,0 +1,3 @@
+export const ITEM_HAS_ERROR = "ITEM_HAS_ERROR";
+export const ITEM_IS_LOADDING = "ITEM_HAS_LOADDING";
+export const ITEM_FETCH_DATA = "ITEM_FETCH_DATA";
