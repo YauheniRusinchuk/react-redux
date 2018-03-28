@@ -1,4 +1,19 @@
 import {ITEM_HAS_ERROR,ITEM_IS_LOADDING,ITEM_FETCH_DATA} from './actionTypes';
+import axios from 'axios';
+
+export function fetchRequest(url) {
+  return (dispatch) => {
+    dispatch(itemsIsLoading(true))
+
+    axios.get(url)
+      .then(res => {
+        dispatch(itemsFetchDataSuccess(res.data))
+      })
+      .catch(err => dispatch(itemsHasErrored(true)))
+
+  }
+};
+
 
 export function itemsHasErrored(bool) {
   return {
