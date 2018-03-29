@@ -1,8 +1,6 @@
 .newslist {
   width: 60%;
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
-
-  justify-content: space-around;
+  justify-content: center;
 }
