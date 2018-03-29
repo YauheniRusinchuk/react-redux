@@ -6,7 +6,7 @@ export default ({index,title,description,author,url,urlToImage,publishedAt}) => 
     <div key={index} className="news">
       <a href={url} target="_blank" className="news_title">{title}</a>
       <p className="news_description">{description}</p>
-      <img src={urlToImage}  alt="image" />
+      <img src={urlToImage}  alt='' />
     </div>
   );
 }

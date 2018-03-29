@@ -12,9 +12,14 @@
 .news_title {
   font-size: 15px;
   font-weight: bold;
-  color: black;
+  color: blue;
   text-transform: uppercase;
   text-decoration: underline;
+}
+
+.news_description {
+  color: grey;
+  font-size: 13px;
 }
 
 
