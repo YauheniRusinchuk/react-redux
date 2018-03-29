@@ -1,43 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import NewsList from './components/news/newsList';
 import Chat from './components/chat/chat';
-import {connect} from 'react-redux';
-import {fetchRequest} from './actions/item';
 
 
 
-class App extends Component {
-
-  componentDidMount() {
-      this
-      .props
-      .fetchItems("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3853fddd2e404e7aa7739c1bb86c602c")
-  }
-
-  render() {
+const App = () => {
     return (
       <div className="main">
-        <NewsList items={this.props.items}/>
+        <NewsList />
         <Chat />
       </div>
     );
   }
-}
 
-const mapStateToProps = (state) => {
-  return {
-    items: state.items,
-    itemsHasErrored: state.itemsHasErrored
-  }
-}
-
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    fetchItems: (url) => dispatch(fetchRequest(url))
-  }
-}
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
