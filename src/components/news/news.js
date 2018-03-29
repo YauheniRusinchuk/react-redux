@@ -7,6 +7,10 @@ export default ({index,title,description,author,url,urlToImage,publishedAt}) => 
       <a href={url} target="_blank" className="news_title">{title}</a>
       <p className="news_description">{description}</p>
       <img src={urlToImage}  alt='' />
+      <div className="news_info">
+        <p> {publishedAt} </p>
+        <p> {author || "Unknown" } </p>
+      </div>
     </div>
   );
 }

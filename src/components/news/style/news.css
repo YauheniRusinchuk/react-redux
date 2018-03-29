@@ -22,7 +22,15 @@
   font-size: 13px;
 }
 
+.news_info {
+  display: flex;
+  justify-content: space-around;
+}
 
+.news_info p {
+  color: grey;
+  font-size: 12px;
+}
 
 
 .news img {
