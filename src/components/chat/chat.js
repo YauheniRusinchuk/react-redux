@@ -1,10 +1,11 @@
 import React from 'react';
+import './style/style.css'
 
 class Chat extends React.Component {
 
   render(){
     return(
-      <div> CHAT </div>
+      <div className="chat"> CHAT </div>
     )
   }
 }
