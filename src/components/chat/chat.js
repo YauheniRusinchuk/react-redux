@@ -4,8 +4,6 @@ import View from './viewMessage';
 import Addpost from './addpost';
 
 
-
-
 class Chat extends React.Component {
 
   render(){
@@ -14,7 +12,7 @@ class Chat extends React.Component {
         <View />
         <Addpost />
        </div>
-    )
+    );
   }
 }
 
