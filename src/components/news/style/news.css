@@ -1,18 +1,23 @@
 .news {
-  width: 90%;
+  width: 80%;
   margin: 10px;
   text-align: center;
   border-radius: 5px;
 }
 
 
-.news_title {
+/* .news_title {
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
+*/
+
 
 
 .news img {
   width: 100%;
   background-position: center;
+  background-size: cover;
 }
