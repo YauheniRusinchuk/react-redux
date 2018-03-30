@@ -7,9 +7,10 @@ class View extends React.Component {
       <div className="view">
         <span className="comment">This is first comment</span>
         <span className="comment">This is second comment</span>
-        <span className="comment">I like react</span>
-        <span className="comment">I like react and redux</span>
-        <span className="comment">I like react-native</span>
+        <span className="comment">
+        I can see sissy Obama and his he/she now hiding in their little bunker in
+        DC... jealous cause Trump is gonna get a Nobel peace prize for this.
+        </span>
        </div>
     );
   }
