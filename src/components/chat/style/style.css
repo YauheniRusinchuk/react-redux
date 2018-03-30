@@ -25,7 +25,7 @@
 .addpost input[type='text'] {
   width: 400px;
   border: 2px solid #26b9eb;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: none;
   outline: none;
   padding: 10px;
@@ -45,5 +45,5 @@
   box-shadow: 0 10px 10px grey;
   margin: 20px;
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
