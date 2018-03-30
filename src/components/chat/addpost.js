@@ -4,20 +4,26 @@ import React from 'react';
 class Addpost extends React.Component {
 
   state = {
-    text: ''
+    text: '',
+    post: []
   }
-
 
   onSubmit = (e) => {
     e.preventDefault();
-    console.log("ENTER .....");
+    const {text} = this.state;
+    const {post} = this.state;
+    post.push(text);
+    this.setState({
+      text: '',
+      post: post,
+    })
+    console.log(this.state.post)
   }
 
   onChange = (e) => {
     this.setState({
       [e.target.name] : e.target.value
-    })
-    console.log(this.state.text)
+    });
   }
 
 
