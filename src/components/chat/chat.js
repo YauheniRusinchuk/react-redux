@@ -8,7 +8,7 @@ class Chat extends React.Component {
 
   render(){
     return(
-      <div className="chat"> CHAT
+      <div className="chat">
         <View />
         <Addpost />
        </div>
